@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>12</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.IO.Hashing" Version="8.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="..\Utf8StrAnalyzer\Utf8StrAnalyzer\bin/Release\netstandard2.0\Utf8StrAnalyzer.dll"
+              PackagePath="analyzers\dotnet\roslyn4.3\cs"
+              Pack="true"
+              Visible="false" />
+    </ItemGroup>
+</Project>
