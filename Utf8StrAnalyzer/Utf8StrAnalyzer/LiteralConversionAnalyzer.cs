@@ -34,5 +34,5 @@ public class LiteralConversionAnalyzer: DiagnosticAnalyzer
 
 public static class DiagnosticDescriptors
 {
-    public static readonly DiagnosticDescriptor U8StrAnalyzer = new("U8STR001", "U8StrAnalyzer", "Only utf8 string literals can be converted to u8str", "Usage", DiagnosticSeverity.Error, true);
+    public static readonly DiagnosticDescriptor U8StrAnalyzer = new("U8STR001", "U8StrAnalyzer", "Only utf8 string literals can be implicitly converted to u8str", "Usage", DiagnosticSeverity.Error, true);
 }
